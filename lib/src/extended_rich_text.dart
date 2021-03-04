@@ -163,7 +163,6 @@ class ExtendedRichText extends MultiChildRenderObjectWidget {
       locale: locale ??
           Localizations.localeOf(
             context,
-            nullOk: true,
           ),
       selection: selection,
       onSelectionChanged: onSelectionChanged,
@@ -193,7 +192,7 @@ class ExtendedRichText extends MultiChildRenderObjectWidget {
       ..maxLines = maxLines
       ..strutStyle = strutStyle
       ..textWidthBasis = textWidthBasis
-      ..locale = locale ?? Localizations.localeOf(context, nullOk: true)
+      ..locale = locale ?? Localizations.localeOf(context)
       ..selection = selection
       ..selectionColor = selectionColor
       ..onSelectionChanged = onSelectionChanged
